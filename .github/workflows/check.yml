@@ -120,7 +120,7 @@ jobs:
           tar cfj dist.tar.gz ./dist
 
       - name: Storing build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: dist-${{ github.run_id }}
           path: dist.tar.gz
